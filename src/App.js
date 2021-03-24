@@ -9,6 +9,7 @@ import Home from './components/Home';
 import PrivateRoute from './utils/PrivateRoute';
 import PublicRoute from './utils/PublicRoute';
 import { getToken, removeUserSession, setUserSession } from './utils/common';
+//sessions
 
 function App() {
   const [authLoading, setAuthLoading] = useState(true);
