@@ -19,7 +19,7 @@ function App() {
       return;
     }
  
-    axios.get(`http://localhost:9000/users/verifyToken?token=${token}`).then(response => {
+    axios.get(`https://isen-emergence.herokuapp.com/users/verifyToken?token=${token}`).then(response => {
       setUserSession(response.data.token, response.data.user);
       setAuthLoading(false);
     }).catch(error => {
